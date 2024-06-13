@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Cupid Creatives Feedback Form</title>
+    <link
+      rel="stylesheet"
+      href="survey.css" />
+  </head>
+  <body>
+    <h1 id="title">Cupid Creatives Feedback Form</h1>
+    <p id="description">
+      Please take a moment to provide your feedback about our services. Your
+      input is valuable to us!
+    </p>
+    <form id="survey-form">
+      <label
+        id="name-label"
+        for="name"
+        >Name:</label
+      >
+      <input
+        id="name"
+        type="text"
+        placeholder="Enter your name"
+        required />
+
+      <label
+        id="email-label"
+        for="email"
+        >Email:</label
+      >
+      <input
+        id="email"
+        type="email"
+        placeholder="Enter your email"
+        required />
+
+      <label
+        id="number-label"
+        for="number"
+        >Age:</label
+      >
+      <input
+        id="number"
+        type="number"
+        min="18"
+        max="100"
+        placeholder="Enter your age"
+        required />
+
+      <label for="dropdown">What service did you receive?</label>
+      <select
+        id="dropdown"
+        required>
+        <option value="">Select an option</option>
+        <option value="Interior Painting">Interior Painting</option>
+        <option value="Exterior Painting">Exterior Painting</option>
+        <option value="Wallpaper Removal">Wallpaper Removal</option>
+        <option value="Other">Other (please specify)</option>
+      </select>
+
+      <label>How would you rate our service?</label>
+      <input
+        type="radio"
+        id="rating1"
+        name="rating"
+        value="rating1"
+        required />
+      <label for="rating1">1 (Poor)</label>
+      <input
+        type="radio"
+        id="rating2"
+        name="rating"
+        value="rating2" />
+      <label for="rating2">2 (Fair)</label>
+      <input
+        type="radio"
+        id="rating3"
+        name="rating"
+        value="rating3" />
+      <label for="rating3">3 (Good)</label>
+      <input
+        type="radio"
+        id="rating4"
+        name="rating"
+        value="rating4" />
+      <label for="rating4">4 (Very Good)</label>
+      <input
+        type="radio"
+        id="rating5"
+        name="rating"
+        value="rating5" />
+      <label for="rating5">5 (Excellent)</label>
+
+      <label>Additional options:</label>
+      <input
+        type="checkbox"
+        id="checkbox1"
+        name="checkbox"
+        value="checkbox1" />
+      <label for="checkbox1">I would recommend this service to others</label>
+      <input
+        type="checkbox"
+        id="checkbox2"
+        name="checkbox"
+        value="checkbox2" />
+      <label for="checkbox2">I have used this service before</label>
+
+      <label for="comments">Additional comments:</label>
+      <textarea
+        id="comments"
+        rows="5"
+        placeholder="Enter your comments"></textarea>
+
+      <button
+        id="submit"
+        type="submit">
+        Submit
+      </button>
+    </form>
+  </body>
+</html>
